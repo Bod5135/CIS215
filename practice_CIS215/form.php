@@ -7,17 +7,20 @@
         <body>
             <main>
                 <form action='' method='post' class='planes_form'>
-                    Enter name here: <input type='text' name='name' id='name_input'>
+                    <label for='name_input'>Enter name here: </label>
+                    <input type='text' name='name' id='name_input'>
 
-                    Enter your email: <input type='email' name='email' id= 'email_input'>
+                    <label for='email_input'>Enter your email:</label>
+                    <input type='email' name='email' id= 'email_input'>
 
-                    what is your favorite plane: <input type='text' name='fav_plane' id='fav_plane_input'>
+                    <label for='fav_plane_input'>what is your favorite plane:</label>
+                    <input type='text' name='fav_plane' id='fav_plane_input'>
 
-                    is it military: 
+                    <label for='is_military_input'>is it military:</label>
                     <input type='radio' name='is_military' id='is_military_input'> Yes
                     <input type='radio' name='is_military' id='is_not_military_input'> no
                     
-                    How many plane have you seen today:
+                    <label for='num_planes_input'> How many plane have you seen today:</label>
                     <select name='num_planes' id='num_planes_input'>
                         <option value="0">none</option>
                         <option value="1">1</option>
