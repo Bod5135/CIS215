@@ -16,6 +16,15 @@
                     is it military: 
                     <input type='radio' name='is_military' id='is_military_input'> Yes
                     <input type='radio' name='is_military' id='is_not_military_input'> no
+                    
+                    How many plane have you seen today:
+                    <select name='num_planes' id='num_planes_input'>
+                        <option value="0">none</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </form>
             </main>
         </body>
