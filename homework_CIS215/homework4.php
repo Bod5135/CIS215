@@ -6,7 +6,7 @@
         </head>
         <body>
             <main>
-                <form action='' method='post' class='Destiny_quiz'>
+                <form action='submit4.php' method='post' class='Destiny_quiz'>
                     <div>
                         <fieldset>
                             <legend>what animal do you like the most:</legend>
@@ -33,8 +33,11 @@
                         <legend>what ablitiy do you think is the best:</legend>
                         <input type='radio' name='fav_ablitiy' id='wall' value='1'> A wall
                         <input type='radio' name='fav_ablitiy' id='dodge' value='2'> dodge
-                        <input type='radio' name='fav_ablitiy' id='heal' > healing circle
+                        <input type='radio' name='fav_ablitiy' id='heal'  value='3'> healing circle
                     </fieldset>
+                    <div>
+                        <button type='submit' name='submit_button' id='submit_button'>Submit</button>
+                    </div>
                 </form>
             </main>
         </body>
