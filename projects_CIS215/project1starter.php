@@ -69,12 +69,6 @@
     </form>
 
     <!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
-    <?php
-        print(password_hash("C)6^0r51", PASSWORD_DEFAULT));
 
-        if (password_verify($_POST("pwd-name"))) {
-            # code...
-        }
-    ?>
     </body>
 </html>
