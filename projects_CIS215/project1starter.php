@@ -62,7 +62,9 @@
                 </optgroup>
             </select>
         </div>
-        
+        <div>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </div>
 
         <!-- TODO: Add your own survey questions -->
 
