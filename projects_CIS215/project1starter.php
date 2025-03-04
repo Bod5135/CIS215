@@ -7,7 +7,7 @@
 
 
     <!-- TODO: Fix all bugs/poor practice in the form -->
-    <form action="" method="post" class="survey">
+    <form action="password_checker.php" method="post" class="survey">
         <div>
             <label for="email-id">Enter your email: </label>
             <input type="email" name="email-name" id="email-id">
