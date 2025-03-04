@@ -15,7 +15,7 @@
         
         <div>
             <label for="pw-id">Enter your password: </label>
-            <input type="text" name="pw-name" id="pw-id">
+            <input type="password" name="pw-name" id="pw-id">
         </div>
         <div>
             <fieldset>
