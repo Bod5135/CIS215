@@ -7,7 +7,7 @@
 
 
     <!-- TODO: Fix all bugs/poor practice in the form -->
-    <form action="" method="get" class="survey">
+    <form action="" method="post" class="survey">
         <div>
             <label for="email-id">Enter your email: </label>
             <input type="email" name="email-name" id="email-id">
@@ -69,6 +69,12 @@
     </form>
 
     <!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
+    <?php
+        print(password_hash("C)6^0r51", PASSWORD_DEFAULT));
 
+        if (password_verify($_POST("pwd-name"))) {
+            # code...
+        }
+    ?>
     </body>
 </html>
