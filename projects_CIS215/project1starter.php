@@ -45,14 +45,17 @@
             <label for="68+">68+ </label>
         </fieldset>
         
-
+        <label for="gender">what gender are you</label>
         <select name="gender" id="gender">
-            <option value="m">Male</option>
-            <option value="f">Female</option>
-            <option value="nb">Nonbinary</option>
-            <option value="gf">Genderfluid</option>
-            <option value="a">Agender</option>
-            <option value="o">Choose not to say/Other</option>
+            <optgroup>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="nb">Nonbinary</option>
+                <option value="gf">Genderfluid</option>
+                <option value="a">Agender</option>
+                <option value="o">Choose not to say/Other</option>
+            </optgroup>
+            
         </select>
 
         <!-- TODO: Add your own survey questions -->
