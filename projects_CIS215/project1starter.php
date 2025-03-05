@@ -68,11 +68,11 @@
 
         <!-- TODO: Add your own survey questions -->
         <div>
-            <label for="pet_name">What is your pet name</label>
+            <label for="pets_name">What is your pet name</label>
             <input type="text" name="pets_name" id="pets">
         </div>
         <div>
-            <label for="pet_age">How old is your pet</label>
+            <label for="pets_age">How old is your pet</label>
             <input type="number" name="pets_age" id="pets">
         </div>
     </form>
