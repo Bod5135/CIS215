@@ -67,7 +67,14 @@
         </div>
 
         <!-- TODO: Add your own survey questions -->
-
+        <div>
+            <label for="pet_name">What is your pet name</label>
+            <input type="text" name="pets_name" id="pets">
+        </div>
+        <div>
+            <label for="pet_age">How old is your pet</label>
+            <input type="text" name="pets_age" id="pets">
+        </div>
     </form>
 
     <!-- TODO: All the backend PHP/SQL stuff! (you may need a separate file for this!) -->
