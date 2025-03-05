@@ -6,6 +6,7 @@
             print("<p>pasword vaild</p>");
             email_check();
             age_check();
+            gender_checker();
         } else {
             print("<p>password invaild</p>");
         };
@@ -25,5 +26,13 @@
         }else {
             print ("<p>age invalid</p>");
         };
+    }
+    function gender_checker(){
+        $gender = $_POST["gender"];
+        if ($gender > 0) {
+            print ("<p>gender $gender</p>");
+         }else {
+            print ("<p>please selcet an answer</p>");
+         };
     }  
     ?>
