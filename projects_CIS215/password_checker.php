@@ -8,6 +8,7 @@
             age_check();
             gender_checker();
             pets_name_checker();
+            pets_age_checker();
         } else {
             print("<p>password invaild</p>");
         };
@@ -42,6 +43,14 @@
             print ("<p>Your pets name is $pets_name</p>");
          }else {
             print ("<p>please answer pets name</p>");
+         };
+    }
+    function pets_age_checker(){
+        $pets_age = $_POST["pets_age"];
+        if ($pets_age > 0) {
+            print ("<p>Your pets age is $pets_age</p>");
+         }else {
+            print ("<p>please answer pets age</p>");
          };
     }  
     ?>
