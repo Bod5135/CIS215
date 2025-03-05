@@ -13,17 +13,17 @@
     function email_check(){
         $email = $_POST["email-name"];
         if (str_contains($email, "@")) {
-           echo (" email valid");
+           print ("<p>email valid</p>");
         }else {
-            echo (" email invalid");
+            print ("<p>email invalid</p>");
         };
     }
     function age_check(){
         $age = $_POST["age"];
         if ($age > 0) {
-           echo (" age valid");
+            print ("<p>age valid</p>");
         }else {
-            echo (" age invalid");
+            print ("<p>age invalid</p>");
         };
     }  
     ?>
