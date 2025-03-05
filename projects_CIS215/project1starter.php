@@ -73,7 +73,7 @@
         </div>
         <div>
             <label for="pet_age">How old is your pet</label>
-            <input type="text" name="pets_age" id="pets">
+            <input type="number" name="pets_age" id="pets">
         </div>
     </form>
 
