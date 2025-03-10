@@ -62,10 +62,7 @@
                 </optgroup>
             </select>
         </div>
-        <div>
-            <button type="submit" name="submit" id="submit">Submit</button>
-        </div>
-
+        
         <!-- TODO: Add your own survey questions -->
         <div>
             <label for="pets_name">What is your pet name</label>
@@ -74,6 +71,9 @@
         <div>
             <label for="pets_age">How old is your pet</label>
             <input type="number" name="pets_age" id="pets">
+        </div>
+        <div>
+            <button type="submit" name="submit" id="submit">Submit</button>
         </div>
     </form>
 
