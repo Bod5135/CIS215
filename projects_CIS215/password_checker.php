@@ -47,8 +47,8 @@
         $email = $_POST["email-name"];
         $select = $db->prepare('SELECT * FROM pet_info WHERE email LIKE ?;');
         $select->execute(array($email));
-        $test = $select->fetch();
-        if ($test == false) {
+        $check = $select->fetch();
+        if ($check == false) {
            return true;
         }else {
             return false;
