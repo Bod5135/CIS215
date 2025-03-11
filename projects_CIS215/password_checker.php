@@ -7,11 +7,21 @@
         if (password_verify($_POST["pw-name"], "$2y$10$2PH3daYyS2gIKkDSJPa1NOgM4c26nDevLe5zZqJ3fpoIIBqxCQQke")) {
             print("<p>pasword vaild</p>");
             data_checker();
+            if (duplicate_check($db)) {
+                data_store($db);
+            }else {
+                data_update($db);
+            };
         } else {
             print("<p>password invaild</p>");
         };
     };
-    function data_store(){
+    function data_update($db){
+        $prepared_stat = $db->prepare("UPDATE PET_INFO SET  age=?, gender=?, pet_name=?, pet_age=? WHERE email LIKE ?");
+
+        $prepared_stat->execute(array($_POST["age"], $_POST["gender"], $_POST["pets_name"], $_POST["pets_age"], $_POST["email-name"]));
+    }
+    function data_store($db){
         $prepared_stat = $db->prepare("INSERT INTO pet_info(email, age, gender, pet_name, pet_age) VALUES(?,?,?,?,?);");
 
         $prepared_stat->execute(array($_POST["email-name"], $_POST["age"], $_POST["gender"], $_POST["pets_name"], $_POST["pets_age"]));
@@ -29,7 +39,7 @@
             };
         };
     }
-    function duplicate_check(){
+    function duplicate_check($db){
         $email = $_POST["email-name"];
         $select = $db->prepare('SELECT * FROM pet_info WHERE email LIKE ?;');
         $select->execute(array($email));
