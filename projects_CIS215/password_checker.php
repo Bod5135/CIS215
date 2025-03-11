@@ -29,6 +29,17 @@
             };
         };
     }
+    function duplicate_check(){
+        $email = $_POST["email-name"];
+        $select = $db->prepare('SELECT * FROM pet_info WHERE email LIKE ?;');
+        $select->execute(array($email));
+        $test = $select->fetch();
+        if ($test == false) {
+           return true;
+        }else {
+            return false;
+        }; 
+    }
     function email_check(){
         $email = $_POST["email-name"];
         if (str_contains($email, "@")) {
