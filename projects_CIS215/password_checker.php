@@ -18,7 +18,7 @@
     };
     /*updates a row based on the email*/
     function data_update($db){
-        $prepared_stat = $db->prepare("UPDATE PET_INFO SET  age=?, gender=?, pet_name=?, pet_age=? WHERE email LIKE ?");
+        $prepared_stat = $db->prepare("UPDATE pet_info SET  age=?, gender=?, pet_name=?, pet_age=? WHERE email LIKE ?");
 
         $prepared_stat->execute(array($_POST["age"], $_POST["gender"], $_POST["pets_name"], $_POST["pets_age"], $_POST["email-name"]));
     }
