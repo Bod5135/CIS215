@@ -63,7 +63,7 @@
     }
     function pets_age_checker(){
         $pets_age = $_POST["pets_age"];
-        if ($pets_age > 0) {
+        if (strlen($pets_age) <= 2) {
             return true;
          }else {
             return false;
