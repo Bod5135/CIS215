@@ -11,6 +11,11 @@
             print("<p>password invaild</p>");
         };
     };
+    function data_store(){
+        $prepared_stat = $db->prepare("INSERT INTO pet_info(email, age, gender, pet_name, pet_age) VALUES(?,?,?,?,?);");
+
+        $prepared_stat->execute(array($_POST["email-name"], $_POST["age"], $_POST["gender"], $_POST["pets_name"], $_POST["pets_age"]));
+    }
     function data_checker(){
         if (email_check()) {
             if(age_check()){
