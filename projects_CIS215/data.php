@@ -16,11 +16,13 @@
             $gender = $row["gender"];
             $pet_name = $row["pet_name"];
             $pet_age = $row["pet_age"];
-            print("<p>Email: $email</p>");
-            print("<p>Age: $age</p>");
-            print("<p>Gender: $gender</p>");
-            print("<p>Pet name: $pet_name</p>");
-            print("<p>Pet age: $pet_age</p>");
+            print("<div>
+                <p>Email: $email</p>
+                <p>Age: $age</p>
+                <p>Gender: $gender</p>
+                <p>Pet name: $pet_name</p>
+                <p>Pet age: $pet_age</p>
+            </div>");
         };
     }
 ?>
