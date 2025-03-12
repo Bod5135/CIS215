@@ -5,7 +5,7 @@
     </head>
     <body>
 
-
+    <a href="https://csnlinux.genesee.edu/~cheath2/projects_CIS215/data.php">all data</a>
     <!-- TODO: Fix all bugs/poor practice in the form -->
     <form action="password_checker.php" method="post" class="survey">
         <div>
