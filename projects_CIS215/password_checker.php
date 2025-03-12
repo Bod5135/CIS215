@@ -12,6 +12,7 @@
             }else {
                 data_update($db);
             };
+            print("<a href='https://csnlinux.genesee.edu/~cheath2/projects_CIS215/data.php'>all data</a>")
         } else {
             print("<p>password invaild</p>");
         };
