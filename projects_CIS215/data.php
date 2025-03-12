@@ -4,7 +4,9 @@
         require 'dbconfig.php';
         $db = connectDB();
         display_data($db);
+        rand_pets($db);
         print("<a href='https://csnlinux.genesee.edu/~cheath2/projects_CIS215/project1starter.php'>back to main</a>");
+        
     }
     function display_data($db){
         $select = $db->prepare('SELECT * FROM pet_info');
@@ -25,5 +27,19 @@
                 <p>Pet age: $pet_age</p>
             </div>");
         };
+        function rand_pets($db){
+            $select = $db->prepare('SELECT * FROM pet_info');
+            $select->execute(array());
+            $tables = $select->fetchAll();
+
+            $random = array_rand($tables, 3);
+            print("<p>some of the pets we know:</p>");
+            foreach ($random as $row_key) {
+                $row = $tables["$row_key"];
+                $pet_name = $row["pet_name"];
+                print("<p>$pet_name</p>");
+            };
+        };
+        
     }
 ?>
