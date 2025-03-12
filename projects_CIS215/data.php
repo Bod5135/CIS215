@@ -26,10 +26,4 @@
             </div>");
         };
     }
-    function display_pet_name($db){
-        foreach ($tables as $row) {
-            $pet_name = $row["pet_name"];
-            print("<p>Pet name: $pet_name</p>");
-        };
-    }
 ?>
