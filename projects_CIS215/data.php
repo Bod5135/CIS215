@@ -9,6 +9,7 @@
         print("<a href='https://csnlinux.genesee.edu/~cheath2/projects_CIS215/project1starter.php'>back to main</a>");
         
     }
+    /* displays all of the table values */
     function display_data($db){
         $select = $db->prepare('SELECT * FROM pet_info');
         $select->execute(array());
@@ -28,6 +29,8 @@
                 <p>Pet age: $pet_age</p>
             </div>");
         };
+
+        /* displays 3 random pet names */
         function rand_pets($db){
             $select = $db->prepare('SELECT * FROM pet_info');
             $select->execute(array());
@@ -41,6 +44,7 @@
                 print("<p>$pet_name</p>");
             };
         };
+        /* displays the average of all the pet ages */
         function average_age($db){
             $select = $db->prepare('SELECT * FROM pet_info');
             $select->execute(array());
