@@ -5,7 +5,7 @@
         require 'dbconfig.php';
         $db = connectDB();
         if (password_verify($_POST["pw-name"], "$2y$10$2PH3daYyS2gIKkDSJPa1NOgM4c26nDevLe5zZqJ3fpoIIBqxCQQke")) {
-            print("<p>pasword vaild</p>");
+            print("<p>password valid</p>");
             data_checker();
             if (duplicate_check($db)) {
                 data_store($db);
@@ -14,7 +14,7 @@
             };
             print("<a href='https://csnlinux.genesee.edu/~cheath2/projects_CIS215/data.php'>all data</a>");
         } else {
-            print("<p>password invaild</p>");
+            print("<p>password invalid</p>");
         };
     };
     /*updates a row based on the email*/
