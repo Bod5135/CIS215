@@ -34,7 +34,7 @@
             $tables = $select->fetchAll();
 
             $random = array_rand($tables, 3);
-            print("<p>some of the pets we know:</p>");
+            print("<p>Some of the pets we know:</p>");
             foreach ($random as $row_key) {
                 $row = $tables["$row_key"];
                 $pet_name = $row["pet_name"];
@@ -53,7 +53,7 @@
                 $count ++;
             };
             $age_average = $age_combie / $count;
-            print("<p>The average of all the pet ages on in the data: $age_average</p>");
+            print("<p>The average of all the pet we know: $age_average</p>");
         }
         
     }
