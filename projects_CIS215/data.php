@@ -5,6 +5,7 @@
         $db = connectDB();
         display_data($db);
         rand_pets($db);
+        average_age($db);
         print("<a href='https://csnlinux.genesee.edu/~cheath2/projects_CIS215/project1starter.php'>back to main</a>");
         
     }
@@ -40,6 +41,20 @@
                 print("<p>$pet_name</p>");
             };
         };
+        function average_age($db){
+            $select = $db->prepare('SELECT * FROM pet_info');
+            $select->execute(array());
+            $tables = $select->fetchAll();
+            $age_combie = 0;
+            $count = 0;
+            foreach ($tables as $row){
+                $pet_age = $row["pet_age"];
+                $age_combie += $pet_age;
+                $count ++;
+            };
+            $age_average = $age_combie / $count;
+            print("<p>The average of all the pet ages on in the data: $age_average</p>");
+        }
         
     }
 ?>
